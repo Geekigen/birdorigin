@@ -1,0 +1,223 @@
+body.ie6 .top_nav,
+body.ie7 .top_nav,
+body.ie8 .top_nav,
+body.ie9 .top_nav {
+	zoom: 1;
+	background-color: #ffffff;
+	filter: progid:DXImageTransform.Microsoft.Chroma(Color=#ffffff)
+	progid: DXImageTransform.Microsoft.DropShadow(OffX=0, OffY=1, Color=#ffffff);
+}
+
+/* START */
+.ddmc
+.dddivider {
+	display:block;
+	position:relative;
+	z-index:1;
+}
+.ddmc
+.dddividery {
+	float:left;
+	width:0px;
+}
+.ddmc
+.ddtitle {
+	display:block;
+	cursor:default;
+	white-space:nowrap;
+	position:relative;
+	z-index:1;
+}
+.ddclear {
+	height:0px;
+	width:0px;
+	clear:left;
+	line-height:0px;
+	display:block;
+	float:none;
+}
+.ddmc {
+	position:relative;
+	zoom:1;
+	z-index:10;
+}
+.ddmc a,
+.ddmc li {
+	float:left;
+	display:block;
+	white-space:nowrap;
+	position:relative;
+	z-index:1;
+}
+.ddmc div a,
+.ddmc ul a,
+.ddmc ul li {
+	float:none;
+}
+.ddsh div a {
+	float:left;
+}
+.ddmc div {
+	visibility:hidden;
+	position:absolute;
+}
+.ddmc
+.ddcbox {
+	cursor:default;
+	display:inline-block;
+	position:relative;
+	z-index:1;
+}
+.ddmc
+.ddcbox a {
+	display:inline;
+}
+.ddmc
+.ddcbox div {
+	float:none;
+	position:static;
+	visibility:inherit;
+	left:auto;
+}
+.ddmc li {
+	z-index:auto;
+}
+.ddmc ul {
+	left:-10000px;
+	position:absolute;
+	z-index:10;
+}
+.ddmc,
+.ddmc ul {
+	list-style:none;
+	padding:0px;
+	margin: 0px;
+}
+.ddmc li a {
+	float:none;
+}
+.ddmc li:hover>ul {
+	left:auto;
+}
+/* END */
+
+/* START */
+#dd0 ul {top: 100%;}
+#dd0 ul li:hover>ul{top:0px;left:100%;}
+/* END */
+
+
+/* Menu Styles */
+
+/* MAIN Container */
+#dd0 {
+	width: auto;
+	height: auto;
+	padding: 0px;
+	margin: 0;
+	float: left;
+    font-weight: 400;
+}
+
+/* MAIN Items */
+#dd0 a {
+	display: block;
+	text-decoration: none;
+	/*color: #003364;*/
+    color: #4b566b;
+	padding: 0;
+	margin-left: 30px;
+	line-height: 35px;
+	font-size: 100%;
+    transition: all 0.4s ease-out;
+}
+#dd0 a i {
+    margin: 6px 0 0 6px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* MAIN Hover State */
+#dd0 a:hover {
+	/*background: #004586;
+	color: #ffffff;*/
+    color: #fe696a;
+}
+
+/* MAIN Hover State - (duplicated for pure CSS) */
+#dd0 li:hover>a {
+	/*background: #004586;
+	color: #ffffff;*/
+    color: #fe696a;
+	-webkit-border-radius: 4x; -moz-border-radius: 4px; border-radius: 4px;
+}
+#dd0 li ul a i {
+    position: absolute;
+    margin: 11px 0 0 6px;
+    display: inline-block;
+    right: 10px;
+}
+/* MAIN Active State */
+body #dd0 .ddactive, body #dd0 .ddactive:hover {
+	padding: 0 12px;
+	margin-left: 8px;
+	/*background-color: #004586;
+	color: #fff;*/
+    background-color: #f2f3f5;
+    color: #4b566b;
+	text-decoration: none;
+	line-height: 210%;
+	-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+}
+
+/* SUB Container */
+#dd0 div, #dd0 ul {
+	width: auto;
+	padding: 10px 5px;
+	margin: 0 0 0 14px;
+	/*background-color: #004586;*/
+    background-color: #fff;
+	-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+    box-shadow: 0px 3px 5px rgba(30, 30, 30, 0.15);
+}
+/* SUB Items */
+#dd0 ul li {
+    /*border-top: 1px solid #003364;*/
+}
+#dd0 ul li:first-child {
+    border-top: 0;
+}
+#dd0 div a, #dd0 ul a {
+	min-width: 190px;
+	height: 30px;
+	margin: 0 0px;
+	padding: 0px 12px;
+	/*color: #ffffff;*/
+    color: #4b566b;
+	font-size: 90%;
+	text-decoration: none;
+	text-align: left;
+	line-height: 30px;
+	text-shadow: none;	
+}
+
+/* SUB Hover State */
+#dd0 div a:hover {
+	background-color: transparent;
+	text-decoration: none;
+	margin: 0px;
+}
+
+/* SUB Hover State - (duplicated for pure CSS) */
+#dd0 ul li:hover>a {
+	/*background-color: #0052a0;*/
+	text-decoration: none;
+	margin: 0px;
+    padding: 0px 9px 0px 15px;
+}
+#dd0 ul li ul {
+    margin: 0px;
+}
+#arrow {
+	background: url(../images/arrow.png) no-repeat right;
+}

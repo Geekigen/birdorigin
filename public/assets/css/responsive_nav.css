@@ -1,0 +1,103 @@
+@media screen and (min-width: 880px) {
+    .responav {display: none;}
+}
+@media screen and (max-width: 879px) {
+    .topnav {display: none;}
+	#cssmenu, #cssmenu ul, #cssmenu li, #cssmenu a {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		list-style: none;
+		text-decoration: none;
+		position: relative;
+	}
+	#cssmenu a {}
+	#cssmenu {
+		display: block;
+		margin: 0 15px 15px 15px;
+		background: #ffffff url(../images/respo-drop-bg.png) top repeat-x;
+        box-shadow: 0px 3px 10px rgba(30, 30, 30, 0.15);
+        -webkit-border-radius: 0 0 6px 6px;
+        -moz-border-radius: 0 0 6px 6px;
+        border-radius: 0 0 6px 6px;
+	}
+	#cssmenu > ul > li { margin: 0;}
+	#cssmenu > ul > li:last-child { margin: 0; }
+	#cssmenu > ul > li > a {
+		display: block;
+		background: transparent;
+		width: 100%;
+		text-align: center;
+		line-height: 45px;
+		padding: 0;
+		text-decoration: none;
+		color: #fff;
+		overflow: hidden;
+	}
+	#cssmenu > ul > li > a > span { display: block; }
+	#cssmenu > ul > li > a:hover { text-decoration: none; }
+	#cssmenu > ul > li.active { border-bottom: none; }
+	#cssmenu > ul > li.active > a {
+		line-height: 45px;
+		color: #fff;
+	}
+	#cssmenu > ul > li.active > a span {}
+	#cssmenu > ul > li.has-sub > a span { /*background: transparent url(../images/icon_nav.png) no-repeat 14px 15px; width: 50px; float: right;*/ background-color: #4b566b; padding: 4px 6px 3px 6px; border: 0; font-size: 22px; line-height: 22px; color: #ffffff; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; top: 15px; right: 15px; position: fixed; float: right; }
+	#cssmenu > ul > li.has-sub.active > a span { /*background: transparent url(../images/icon_cross.png) no-repeat 14px 15px;*/}
+	
+	/* New ---------- */
+	#cssmenu > ul > li > ul > li > a > span,
+	#cssmenu > ul > li > ul > li > ul > li > a > span { display: block;}
+	
+	#cssmenu > ul > li > ul > li > a:hover,
+	#cssmenu > ul > li > ul > li > ul > li > a:hover { text-decoration: none; }
+	
+	#cssmenu > ul > li > ul > li.active,
+	#cssmenu > ul > li > ul > li > ul > li.active { border-bottom: none; }
+	
+	#cssmenu > ul > li > ul > li.active > a,
+	#cssmenu > ul > li > ul > li > ul > li.active > a {
+		line-height: 45px;
+		color: #fe696a;
+	}
+	
+	#cssmenu > ul > li > ul > li.active > a span,
+	#cssmenu > ul > li > ul > li > ul > li.active > a span {}
+	
+	#cssmenu > ul > li > ul > li.has-sub > a span,
+	#cssmenu > ul > li > ul > li > ul > li.has-sub > a span { background: url(../images/icon_plus.png) 97% 18px no-repeat;}
+	
+	#cssmenu > ul > li > ul > li.has-sub.active > a span,
+	#cssmenu > ul > li > ul > li > ul > li.has-sub.active > a span { background: url(../images/icon_minus.png) 97% 18px no-repeat;}
+	
+	/* Sub menu */
+	#cssmenu ul ul { display: none;}
+	#cssmenu ul li ul {max-height: 500px; overflow: auto; background-color: transparent; padding: 0 15px;}
+	#cssmenu ul ul li { padding: 0; }
+	#cssmenu ul ul a {
+		display: block;
+		color: #4b566b;
+		padding-left: 15px;
+		line-height: 45px;
+		/*background-color: #645841;*/
+		background-color: transparent;
+		width: 100%;
+		background-image: none;
+		text-align: left;
+	}
+	#cssmenu ul ul li a.special {
+		background-color: #3d3d3d;
+		color: #ff0000;
+		border-color: #6e6548;
+	}
+	#cssmenu ul ul a:hover { color: #fe696a;}	
+	#cssmenu ul ul ul a {padding-left: 30px;}
+	#cssmenu ul ul ul a:hover {color: #fe696a;}
+	#cssmenu ul ul ul ul a {padding-left: 50px;}
+	#cssmenu ul ul ul ul a:hover {color: #fe696a;}
+    #cssmenu ul ul li a i {
+        margin: 12px 0 0 6px;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
